@@ -8,7 +8,7 @@ export function DialPad({ team, initialValue = '', onConfirm, onClose }) {
 
   function handleKey(key) {
     if (key === '⌫') { setValue(''); return }
-    if (key === '✓') { if (value !== '') onConfirm(value); return }
+    if (key === '✓') { onConfirm(value); return }
     setValue(String(key))
   }
 
@@ -31,7 +31,7 @@ export function DialPad({ team, initialValue = '', onConfirm, onClose }) {
               key={i}
               className={`dp-btn ${key === '✓' ? 'dp-confirm' : ''} ${key === '⌫' ? 'dp-delete' : ''}`}
               onClick={() => handleKey(key)}
-              disabled={key === '✓' && !value}
+              disabled={false}
             >
               {key}
             </button>

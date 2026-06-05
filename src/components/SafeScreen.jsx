@@ -29,7 +29,7 @@ export function SafeScreen() {
   const allFilled = Object.values(digits).every(d => d !== null)
 
   function handleConfirm(digit) {
-    setDigits(prev => ({ ...prev, [active]: digit }))
+    setDigits(prev => ({ ...prev, [active]: digit === '' ? null : digit }))
     setActive(null)
   }
 
