@@ -1,11 +1,7 @@
-import './App.css'
+import { SafeScreen } from './components/SafeScreen'
 
 function App() {
-  return (
-    <div className="app">
-      <p>aquí va el código</p>
-    </div>
-  )
+  return <SafeScreen />
 }
 
 export default App
