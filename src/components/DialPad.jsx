@@ -19,7 +19,7 @@ export function DialPad({ team, initialValue = '', onConfirm, onClose }) {
         onClick={e => e.stopPropagation()}
         style={{ '--tc': team.color }}
       >
-        <p className="dp-team">{team.label} Division{team.label}</p>
+        <p className="dp-team">{team.label} Division</p>
 
         <div className="dp-display">
           {value || <span className="dp-cursor">_</span>}
