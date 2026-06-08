@@ -5,10 +5,10 @@ import { SuccessScreen } from './SuccessScreen'
 import './SafeScreen.css'
 
 const TEAMS = {
-  top:    { color: '#00DDB8', label: 'Turquesa' },
-  right:  { color: '#1A44E8', label: 'Azul' },
-  bottom: { color: '#00D944', label: 'Verde' },
-  left:   { color: '#FFD700', label: 'Amarillo' },
+  top:    { color: '#00DDB8', label: 'Turquoise' },
+  right:  { color: '#1A44E8', label: 'Blue' },
+  bottom: { color: '#00D944', label: 'Green' },
+  left:   { color: '#FFD700', label: 'Yellow' },
 }
 
 const DIGIT_POS = {
